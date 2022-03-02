@@ -1,0 +1,30 @@
+name: MidoriInventoryViewer
+version: 1.0
+main: midorichan.InventoryViewer
+api-version: 1.18
+author: midorichan
+website: https://twitter.com/Midorichaan2525
+
+commands:
+  inventory:
+    default: op
+    aliases: [inv]
+  enderchest:
+    default: op
+    aliases: [ec, ender]
+  mireload:
+    default: op
+
+permissions:
+  midoriinventory.*:
+    default: op
+    children:
+      midoriinventory.inventory: true
+      midoriinventory.enderchest: true
+      midoriinventory.reload: true
+  midoriinventory.inventory:
+    default: op
+  midoriinventory.enderchest:
+    default: op
+  midoriinventory.reload:
+    default: op
