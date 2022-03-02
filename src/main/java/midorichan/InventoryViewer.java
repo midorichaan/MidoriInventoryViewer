@@ -36,7 +36,7 @@ public final class InventoryViewer extends JavaPlugin {
 
         //Config vars
         prefix = config.getString("plugin-prefix", " &2>&a>&r ")
-                .replace("§", "&");
+                .replace("&", "§");
 
         //Register commands
         Bukkit.getPluginCommand("mireload").setExecutor(new reloadConfig());
